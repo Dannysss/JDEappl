@@ -5,9 +5,8 @@
     android:id="@+id/scrollMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
-    android:fillViewport="true">
-
+    android:fillViewport="true"
+    android:visibility="visible">
 
     <LinearLayout
 
@@ -15,29 +14,63 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageAvatarId"
+        <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/app_name"
-            android:scaleType="matrix"
-            android:visibility="visible"
-            tools:srcCompat="@tools:sample/avatars[10]" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textElect"
-            android:layout_width="424dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:text="@string/text_elect"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/buttonRecipe"
-            android:layout_width="match_parent"
-            android:layout_height="349dp"
-            android:background="@drawable/burgers" />
+                <ImageView
+                    android:id="@+id/imageAvatarId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="matrix"
+                    android:visibility="visible"
+                    tools:srcCompat="@tools:sample/avatars[10]" />
+
+                <EditText
+                    android:id="@+id/searchRecipe"
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/search"
+                    android:inputType="textPersonName" />
+
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textElect"
+                android:layout_width="424dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/text_elect"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <Button
+                android:id="@+id/buttonRecipeOne"
+                android:layout_width="match_parent"
+                android:layout_height="349dp"
+                android:background="@drawable/burgers" />
+
+            <Button
+                android:id="@+id/buttonRecipeTwo"
+                android:layout_width="match_parent"
+                android:layout_height="377dp"
+                android:background="@drawable/burgers" />
+
+            <Button
+                android:id="@+id/buttonRecipeThree"
+                android:layout_width="match_parent"
+                android:layout_height="349dp"
+                android:background="@drawable/burgers" />
+
+
+        </TableLayout>
 
     </LinearLayout>
 

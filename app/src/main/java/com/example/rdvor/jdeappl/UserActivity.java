@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-public class UserActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+public class UserActivity extends AppCompatActivity{
 
 
     @Override
@@ -26,10 +26,8 @@ public class UserActivity extends AppCompatActivity implements SearchView.OnQuer
         imageAvatar.setImageResource(R.drawable.avatar);
 
         TextView textView = findViewById(R.id.textElect);
-        Typeface typeFace = Typeface.createFromAsset(getAssets(), "fonts/GothamCondensed-Bold.otf");
-        textView.setTypeface( typeFace );
 
-        Button button = findViewById(R.id.buttonRecipe);
+        Button button = findViewById(R.id.buttonRecipeOne);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,31 +37,6 @@ public class UserActivity extends AppCompatActivity implements SearchView.OnQuer
             }
         });
 
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        getMenuInflater().inflate( R.menu.menu_seacrh, menu );
-
-        MenuItem searchItem = menu.findItem( R.id.search );
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView( searchItem );
-        searchView.setOnQueryTextListener( this );
-
-        return true;
-    }
-
-
-    @Override
-    public boolean onQueryTextSubmit(String query)
-    {
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextChange(String newText)
-    {
-        return false;
     }
 
 }

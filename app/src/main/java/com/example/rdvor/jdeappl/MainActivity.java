@@ -10,11 +10,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Used to load the 'native-lib' library on application startup.
-    static {
-        System.loadLibrary("native-lib");
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView textView = findViewById(R.id.appName);
-        Typeface typeFace = Typeface.createFromAsset(getAssets(), "GothamCondensed-Bold.otf");
-        textView.setTypeface( typeFace );
     }
 
 

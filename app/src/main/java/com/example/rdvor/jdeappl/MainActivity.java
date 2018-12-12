@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity( intent );
             }
         });
-
-        TextView textView = findViewById(R.id.appName);
     }
 
 

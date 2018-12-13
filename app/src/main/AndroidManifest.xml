@@ -21,11 +21,15 @@
         </activity>
 
         <activity android:name=".UserActivity">
-
         </activity>
 
         <activity android:name=".RecipeActivity">
+        </activity>
 
+        <activity android:name=".SearchRecipeActivity">
+        </activity>
+
+        <activity android:name=".SearchIngredActivity">
         </activity>
 
     </application>

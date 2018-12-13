@@ -8,96 +8,84 @@ android:layout_height="match_parent"
 android:fillViewport="true"
 android:visibility="visible">
 
-<LinearLayout
+    <LinearLayout
 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+        android:id="@+id/layoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageAvatarId"
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/app_name"
-                android:scaleType="matrix"
-                android:visibility="visible"
-                tools:srcCompat="@tools:sample/avatars[10]" />
+                android:layout_height="match_parent">
 
-            <RelativeLayout>
-
-                <EditText
-                    android:id="@+id/searchRecipe"
-                    android:layout_width="263dp"
+                <ImageView
+                    android:id="@+id/imageAvatarId"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_above="@id/searchRecipe"
-                    android:layout_gravity="center"
-                    android:ems="15"
-                    android:hint="@string/search"
-                    android:inputType="textPersonName" />
+                    android:layout_marginRight="25dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="matrix"
+                    android:visibility="visible"
+                    tools:srcCompat="@tools:sample/avatars[10]" />
 
                 <Button
                     android:id="@+id/buttonSearchRecipe"
                     android:layout_width="100dp"
-                    android:layout_height="80dp"
-                    android:layout_below="@id/searchRecipe"
+                    android:layout_height="70dp"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"
                     android:text="Recipe" />
 
                 <Button
                     android:id="@+id/buttonSearchIngred"
                     android:layout_width="100dp"
-                    android:layout_height="80dp"
-                    android:layout_below="@id/searchRecipe"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/buttonSearchRecipe"
                     android:layout_alignRight="@id/buttonSearchRecipe"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="30dp"
+                    android:layout_gravity="center"
                     android:text="Ingred" />
 
-            </RelativeLayout>
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textElect"
+                android:layout_width="424dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/text_elect"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <ImageButton
+                android:id="@+id/buttonRecipeOne"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/plov" />
+
+            <ImageButton
+                android:id="@+id/buttonRecipeTwo"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20dp" />
+
+            <ImageButton
+                android:id="@+id/buttonRecipeThree"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
 
 
-        </TableRow>
+        </TableLayout>
 
-        <TextView
-            android:id="@+id/textElect"
-            android:layout_width="424dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:text="@string/text_elect"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-        <ImageButton
-            android:id="@+id/buttonRecipeOne"
-            android:layout_width="match_parent"
-            android:layout_height="349dp"
-            android:background="@drawable/plov" />
-
-        <ImageButton
-            android:id="@+id/buttonRecipeTwo"
-            android:layout_width="match_parent"
-            android:layout_height="377dp" />
-
-        <ImageButton
-            android:id="@+id/buttonRecipeThree"
-            android:layout_width="match_parent"
-            android:layout_height="349dp" />
-
-
-    </TableLayout>
-
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>
 

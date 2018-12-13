@@ -13,5 +13,6 @@ public class SearchRecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_searchrecipe);
 
         TextView textView = findViewById(R.id.searchRecipe);
+        //for commit
     }
 }

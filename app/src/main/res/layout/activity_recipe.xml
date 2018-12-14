@@ -9,4 +9,79 @@
     android:visibility="visible">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="175dp">
+
+            <ImageView
+                android:id="@+id/startImage"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/plovrecipe"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/likeButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/like" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вкусный узбекский плов"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Многие боятся готовить плов - то он получается кашей, то сухой, то слишком водянистый. К тому же гуру узбекской кухни любят рассказывать о нем длинно, витиевато и с большим количеством ограничений. Кажется, что сварить плов труднее, чем управлять космическим кораблем. Все совсем не так! Плов - это простая еда. И готовится плов легко и просто! Без всяких понтов и заморочек!"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/textProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Продукты"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textComposition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мясо (курица или баранина и т.п.) - 1 кг
+Рис (длиннозерный пропаренный или другой рис) - 1 кг
+Морковь - 1 кг
+Лук репчатый - 4 шт.
+Чеснок - 2 головки
+Перец острый свежий - 2 стручка
+Зира или другие пряности - по вкусу
+Соль - по вкусу
+Масло растительное - 250-300 мл"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonCook"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Приготовить" />
+
+
+    </LinearLayout>
 </ScrollView>
